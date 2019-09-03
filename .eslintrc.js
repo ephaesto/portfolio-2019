@@ -8,10 +8,16 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'eslint:recommended',
+    'plugin:vue/recommended',
+  ],
+  plugins: [
+    'vue'
   ],
   // add your custom rules here
   rules: {
+    "semi": [2, "never"],
+    "vue/max-attributes-per-line": "off",
   }
 }
+
