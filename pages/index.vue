@@ -7,12 +7,28 @@
       </div>
       <h2>Développeur d'application Web</h2>
     </section>
-    <section>
-      <div class="row">
-        <logo class="logo" />
-        <h1>Emeric <span>Lebbrecht</span></h1>
+    <section class="presentation">
+      <div class="container containerFlex">
+        <div class="imgPart">
+          <div class="imgRow">
+            <img src="~/assets/img/avatar.png" alt="One personnal picture">
+          </div>
+        </div>
+        <div class="textPart">
+          <h2>Qui suis-je ?</h2>
+          <p>
+            Sept ans à trimer pour trouver ma voie !!! Je suis heureux de dire enfin je suis développeur, j’ai 27 ans et près à faire un 
+            maximum de projets plus différents les uns que les autres.<br> 
+            Mon côté robin des bois m’a conduit à la protection de l’environnement. Après avoir compris que ce milieu n’était pas fait pour 
+            moi, j’ai erré pendant des années et en 2017 j’ai enfin commencé le développement web avec HTML et CSS puis JavaScript et PHP dans 
+            une formation de webdesigner.<br>
+            Les interfaces, c’est ce que j’aime faire, par contre je me suis vite rendu compte que ma faible connaissance en développement 
+            allait être un frein. J’ai donc choisi de faire une formation tournée vers le PHP et Symfony(POO). A la fin de cette formation, 
+            j’ai effectué un stage de 6 mois en Javascript (Vue.js) et Symfony. J’ai adoré ce stage et maintenant, je cherche à revenir sur mon 
+            premier amour les interfaces en devenant développeur Front-end tout en gardant un fort intérêt pour le Back-end.
+          </p>
+        </div>
       </div>
-      <h2>Développeur d'application Web</h2>
     </section>
   </div>
 </template>
@@ -46,7 +62,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
+/*-------------- Title ----------------*/
 .title
   display: flex
   flex-direction: column
@@ -68,7 +84,7 @@ export default {
     left: 0
     bottom: -1px
     width: 100%
-    height: 130px
+    height: 200px
     background-image: url('~assets/img/waveWhite1.svg')
     background-repeat: repeat-x;
     background-size: cover
@@ -79,7 +95,7 @@ export default {
     left: 0
     bottom: 0
     width: 100%
-    height: 130px
+    height: 200px
     background-image: url('~assets/img/waveWhite2.svg')
     background-repeat: repeat-x;
     background-size: cover
@@ -110,6 +126,66 @@ export default {
   .logo
     width: 70px
     height: 92px
+/*-------------- Title end ----------------*/
+/*-------------- Presentation ----------------*/
+.presentation
+  padding: 15rem 0
+  .imgPart
+    width: 33.33%
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    &:after
+      content: ""
+      overflow: hidden
+      width: 36rem
+      height: 36rem
+      border-radius: 52% 48% 72% 28% / 33% 32% 68% 67%
+      background: #2fa5fa
+      position: absolute
+      left: 50%
+      top: 50%
+      margin-left: -20rem
+      margin-top: -20rem
+      z-index: 2
+    &:before
+      content: ""
+      width: 36rem
+      height: 36rem
+      overflow: hidden
+      border-radius: 72% 28% 20% 80% / 60% 60% 40% 40%
+      background: #5b43a1
+      position: absolute
+      left: 50%
+      top: 50%
+      margin-left: -20rem
+      margin-top: -20rem
+      z-index: 3
+  .imgRow
+    width: 32rem
+    height: 32rem
+    overflow: hidden
+    border-radius: 33% 67% 60% 40% / 42% 36% 64% 58%
+    display: flex
+    justify-content: center
+    align-items: center
+    background: white
+    position: relative
+    z-index: 4
+    img
+      display: block
+      height: 100%
+  .textPart
+    width: 66.66%
+    h2
+      color: #5b43a1
+      font-size: 4rem
+      padding-bottom: 3rem
+    p
+      font-size: 2rem
+/*-------------- Presentation end ----------------*/
+
 @media screen and (min-width: 360px)
   .title
     height: 600px

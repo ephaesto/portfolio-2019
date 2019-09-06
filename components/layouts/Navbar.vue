@@ -15,17 +15,17 @@
           </nuxt-link>
         </li>
         <li @click="isVisible=false">
-          <nuxt-link to="/ggg">
+          <nuxt-link to="/skills">
             Mes Compétences
           </nuxt-link>
         </li>
         <li @click="isVisible=false">
-          <nuxt-link to="/55">
+          <nuxt-link to="/works">
             Mes Créations
           </nuxt-link>
         </li>
         <li @click="isVisible=false">
-          <nuxt-link to="/55u">
+          <nuxt-link to="/contact">
             Contactez-moi
           </nuxt-link>
         </li>
@@ -78,7 +78,7 @@
     position: relative
     left: 0
     top: 0
-    z-index: 2
+    z-index: 998
   nav
     position: fixed
     top: 0
