@@ -30,6 +30,47 @@
         </div>
       </div>
     </section>
+    <section class="career">
+      <div class="container containerFlex containerFlexReverse">
+        <div class="imgPart">
+          <img src="~/assets/img/accueilTimeline.svg" alt="illstration timeline">
+        </div>
+        <div class="textPart">
+          <h2>Mon parcours</h2>
+          <h3>Avant l’informatique :</h3>
+          <ul>
+            <li><span class="dateCareer">2010 / 2013</span> BTSA aquaculture <span class="placeCareer">validée par ISETA de Poisy</span></li>
+            <li><span class="dateCareer">2014 / 2015</span> DUT informatique <span class="placeCareer">IUT Orléans</span></li>
+            <li><span class="dateCareer">2015 / 2016</span> Licence 1 de Psychologie <span class="placeCareer">Université Savoie Mont-Blanc</span></li>
+          </ul>
+          <h3>Et maintenant :</h3>
+          <ul>
+            <li><span class="dateCareer">2016 / 2017</span> Titre professionnel Designer web RNCP III <span class="placeCareer">validé par ARIES Grenoble</span></li>
+            <li><span class="dateCareer">2017 / 2019</span> Chef de projet multimédia RNCP II <span class="placeCareer">validé par Openclassrooms</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="goal">
+      <div class="container containerFlex">
+        <div class="imgPart">
+          <img src="~/assets/img/accueilTechnologie.svg" alt="illstration all technologie">
+        </div>
+        <div class="textPart">
+          <h2>Ma vision dans le monde du développement informatique </h2>
+          <p>
+            Pour moi le code peut s’apparenter à la glaise du sculpteur ou la peinture du peintre vous l’aurez compris j’aime créer. Les projets et 
+            les défis sont les raisons pour lesquels je code.<br> 
+            J’ai eu cette révélation que dans mes dernières années d’étude ce qui explique sûrement mon DUT d’informatique avorté. Mon objectif final 
+            serait de compléter les compétences qui vont des métiers de UX designer, illustrateur et modélisateur 3D  aux métiers de  développeur IA, 
+            big data, blockchain. Je ne suis pas intéressé par être le meilleur dans un langage, mais plutôt être capable de faire n’importe quel projet 
+            qu’il soit loufoque ou non.<br>
+            Bon c’est un projet ambitieux et il ne sera pas rempli tout de suite, mais connaître la ligne d’arrivée me permet aujourd’hui d’être curieux 
+            et ouvert d’esprits dans pleins de domaines.
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -129,7 +170,7 @@ export default {
 /*-------------- Title end ----------------*/
 /*-------------- Presentation ----------------*/
 .presentation
-  padding: 15rem 0
+  padding: 10rem 0
   .imgPart
     width: 33.33%
     display: flex
@@ -178,13 +219,101 @@ export default {
       height: 100%
   .textPart
     width: 66.66%
+    padding: 0 4rem
     h2
       color: #5b43a1
-      font-size: 4rem
-      padding-bottom: 3rem
+      font-size: 3rem
+      padding-bottom: 2rem
     p
-      font-size: 2rem
+      font-size: 1.5rem
 /*-------------- Presentation end ----------------*/
+/*-------------- Career ----------------*/
+.career
+  padding: 20rem 0
+  background: #2fa5fa
+  position: relative
+  &:before
+      content: ""
+      overflow: hidden
+      width: 0
+      height: 0
+      border-style: solid;
+      border-width: 200px 10000px 0 0;
+      border-color: white transparent transparent transparent
+      position: absolute
+      left: 50%
+      top: 0
+      margin-left: -5000px
+      z-index: 2
+  &:after
+      content: ""
+      overflow: hidden
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 0 200px 10000px;
+      border-color: transparent transparent white transparent
+      position: absolute
+      left: 50%
+      bottom: 0
+      margin-left: -5000px
+      z-index: 2
+  .imgPart
+    width: 33.33%
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      display: block
+      width: 100%
+    
+  .textPart
+    width: 66.66%
+    padding: 0 4rem
+    h2
+      color: white
+      font-size: 3rem
+      padding-bottom: 2rem
+    h3
+      color: white
+      font-size: 2rem
+    ul
+      padding: 2rem
+      li
+        list-style: none
+        font-size: 1.5rem
+        color: #5b43a1
+        font-weight: 700
+        .dateCareer
+          color: #b91ebd
+          font-weight: 900
+          padding-right: 1rem
+        .placeCareer
+          font-weight: 400
+
+/*-------------- Career end ----------------*/
+/*-------------- Goal ----------------*/
+.goal
+  padding: 10rem 0
+  .imgPart
+    width: 33.33%
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      display: block
+      width: 100%
+    
+  .textPart
+    width: 66.66%
+    padding: 0 4rem
+    h2
+      color: #5b43a1
+      font-size: 3rem
+      padding-bottom: 2rem
+    p
+      font-size: 1.5rem
+/*-------------- Goal end ----------------*/
 
 @media screen and (min-width: 360px)
   .title

@@ -17,7 +17,7 @@ export default {
 
   loading: { color: '#fff' },
  
-  css: ['~/assets/styles/styles.sass'],
+  css: ['@/assets/styles/styles.sass'],
  
   plugins: [  ],
  

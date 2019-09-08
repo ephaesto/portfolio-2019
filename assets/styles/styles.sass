@@ -1,3 +1,20 @@
+html 
+  font-family: Roboto,sans-serif
+  font-size: 12px
+  word-spacing: 1px
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  box-sizing: border-box
+
+*,*:before,*:after
+  box-sizing: border-box
+  margin: 0
+
+h1,h2,h3,h4,h5,h6
+    font-family: 'Montserrat', sans-serif
+
 section
     display: flex
     justify-content: center
@@ -10,10 +27,13 @@ section
     flex-direction: row
     justify-content: center
     align-items: center
+    &.containerFlexReverse
+        flex-direction: row-reverse
 
 @media screen and (min-width: 1400px)
     .container
-        max-width: 1200px
+        max-width: none
+        width: 1200px
 @media screen and (min-width: 1800px)
     .container
-        max-width: 1600px
+        width: 1600px
