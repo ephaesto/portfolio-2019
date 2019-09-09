@@ -170,9 +170,8 @@ export default {
 /*-------------- Title end ----------------*/
 /*-------------- Presentation ----------------*/
 .presentation
-  padding: 10rem 0
+  padding: 5rem 0
   .imgPart
-    width: 33.33%
     display: flex
     justify-content: center
     align-items: center
@@ -180,32 +179,32 @@ export default {
     &:after
       content: ""
       overflow: hidden
-      width: 36rem
-      height: 36rem
+      width: 22rem
+      height: 22rem
       border-radius: 52% 48% 72% 28% / 33% 32% 68% 67%
       background: #2fa5fa
       position: absolute
       left: 50%
       top: 50%
-      margin-left: -20rem
-      margin-top: -20rem
+      margin-left: -12rem
+      margin-top: -12rem
       z-index: 2
     &:before
       content: ""
-      width: 36rem
-      height: 36rem
+      width: 22rem
+      height: 22rem
       overflow: hidden
       border-radius: 72% 28% 20% 80% / 60% 60% 40% 40%
       background: #5b43a1
       position: absolute
       left: 50%
       top: 50%
-      margin-left: -20rem
-      margin-top: -20rem
+      margin-left: -12rem
+      margin-top: -12rem
       z-index: 3
   .imgRow
-    width: 32rem
-    height: 32rem
+    width: 20rem
+    height: 20rem
     overflow: hidden
     border-radius: 33% 67% 60% 40% / 42% 36% 64% 58%
     display: flex
@@ -218,19 +217,19 @@ export default {
       display: block
       height: 100%
   .textPart
-    width: 66.66%
-    padding: 0 4rem
+    padding: 3rem 2rem
     h2
       color: #5b43a1
-      font-size: 3rem
+      font-size: 2.1rem
       padding-bottom: 2rem
     p
-      font-size: 1.5rem
+      font-size: 1.1rem        
 /*-------------- Presentation end ----------------*/
 /*-------------- Career ----------------*/
 .career
-  padding: 20rem 0
+  padding: 15rem 0
   background: #2fa5fa
+  overflow: hidden
   position: relative
   &:before
       content: ""
@@ -259,29 +258,28 @@ export default {
       margin-left: -5000px
       z-index: 2
   .imgPart
-    width: 33.33%
     display: flex
     justify-content: center
     align-items: center
+    height: 24rem
     img
       display: block
-      width: 100%
+      height: 100%
     
   .textPart
-    width: 66.66%
-    padding: 0 4rem
+    padding:  3rem 2rem
     h2
       color: white
-      font-size: 3rem
+      font-size: 2.1rem
       padding-bottom: 2rem
     h3
       color: white
-      font-size: 2rem
+      font-size: 1.8rem
     ul
-      padding: 2rem
+      padding: 2rem 0 2rem 2rem
       li
         list-style: none
-        font-size: 1.5rem
+        font-size: 1.1rem   
         color: #5b43a1
         font-weight: 700
         .dateCareer
@@ -294,25 +292,24 @@ export default {
 /*-------------- Career end ----------------*/
 /*-------------- Goal ----------------*/
 .goal
-  padding: 10rem 0
+  padding: 5rem 0 10rem 0
   .imgPart
-    width: 33.33%
     display: flex
     justify-content: center
     align-items: center
+    height: 24rem
     img
       display: block
-      width: 100%
+      height: 100%
     
   .textPart
-    width: 66.66%
-    padding: 0 4rem
+    padding: 3rem 2rem
     h2
       color: #5b43a1
-      font-size: 3rem
+      font-size: 2.1rem
       padding-bottom: 2rem
     p
-      font-size: 1.5rem
+      font-size: 1.1rem   
 /*-------------- Goal end ----------------*/
 
 @media screen and (min-width: 360px)
@@ -322,12 +319,12 @@ export default {
   .title
     height: 700px
     &:before
-      background-position: bottom 0 left 100px;
+      background-position: bottom 0 left 100px
 @media screen and (min-width: 575px)
   .title
     height: 800px
     &:before
-      background-position: bottom 0 left 200px;
+      background-position: bottom 0 left 200px
     h1
       font-size: 7rem
       span
@@ -340,19 +337,117 @@ export default {
       height: 150px
 
 @media screen and (min-width: 750px)
+  /*-------------- Title ----------------*/
   .title
     margin-top: -4.5rem 
+    &:before
+      background-position: bottom 0 left 300px
+  /*-------------- Title end ----------------*/
+  /*-------------- Presentation ----------------*/
+  .presentation
+    padding: 5rem 0
+    .imgPart
+      width: 50%
+    .textPart
+      width: 50%
+      padding: 0 2rem
+  /*-------------- Presentation end ----------------*/
+  /*-------------- Career ----------------*/
+  .career
+    padding: 15rem 0
+    .imgPart
+      width: 50%
+      height: auto
+      img
+        height: auto
+        width: 100%
+    .textPart
+      width: 50%
+      padding: 0 2rem
+  /*-------------- Career end ----------------*/
+  /*-------------- Goal ----------------*/
+  .goal
+    padding: 5rem 0 10rem 0
+    .imgPart
+      width: 50%
+      height: auto
+      img
+        height: auto
+        width: 100%
+    .textPart
+      width: 50%
+      padding: 0 2rem
+  /*-------------- Goal end ----------------*/
 @media screen and (min-width: 1190px)
+  /*-------------- Title ----------------*/
   .title
     &:before
-      background-position: bottom 0 left 300px;
+      background-position: bottom 0 left 300px
+  /*-------------- Title end ----------------*/
+  /*-------------- Presentation ----------------*/
+  .presentation
+    padding: 10rem 0
+    .imgPart
+      width: 33.33%
+      &:after
+        width: 29rem
+        height: 29rem
+        margin-left: -16.5rem
+        margin-top: -16.5rem
+      &:before
+        width: 29rem
+        height: 29rem
+        margin-left: -16.5rem
+        margin-top: -16.5rem
+    .imgRow
+      width: 25rem
+      height: 25rem
+    .textPart
+      width: 66.66%
+      padding: 0 4rem
+      h2
+        font-size: 3rem
+      p
+        font-size: 1.5rem
+  /*-------------- Presentation end ----------------*/
+  /*-------------- Career ----------------*/
+  .career
+    padding: 20rem 0
+    .imgPart
+      width: 33.33%
+    .textPart
+      width: 66.66%
+      padding: 0 4rem
+      h2
+        font-size: 3rem
+      h3
+        font-size: 2rem
+      ul
+        li
+          font-size: 1.5rem
+  /*-------------- Career end ----------------*/
+  /*-------------- Goal ----------------*/
+  .goal
+    padding: 10rem 0 20rem 0
+    .imgPart
+      width: 33.33%
+    .textPart
+      width: 66.66%
+      padding: 0 4rem
+      h2
+        font-size: 3rem
+      p
+        font-size: 1.5rem
+  
+  /*-------------- Goal end ----------------*/
+
 @media screen and (min-width: 1380px)
   .title
     &:before
-      background-position: bottom 0 left 400px;
+      background-position: bottom 0 left 400px
 @media screen and (min-width: 1575px)
   .title
     &:before
-      background-position: bottom 0 left 500px;
+      background-position: bottom 0 left 500px
 
 </style>

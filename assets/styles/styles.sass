@@ -21,19 +21,19 @@ section
     align-items: center
 .container
     max-width: 900px
-
 .containerFlex
     display: flex
-    flex-direction: row
+    flex-direction: column
     justify-content: center
     align-items: center
-    &.containerFlexReverse
-        flex-direction: row-reverse
+        
 
+@media screen and (min-width: 750px)
+    .containerFlex
+        flex-direction: row
+        &.containerFlexReverse
+            flex-direction: row-reverse
 @media screen and (min-width: 1400px)
     .container
         max-width: none
         width: 1200px
-@media screen and (min-width: 1800px)
-    .container
-        width: 1600px
