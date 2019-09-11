@@ -20,15 +20,14 @@ export default {
  
   css: ['@/assets/styles/styles.sass'],
  
-  plugins: [  ],
+  plugins: [],
  
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
   ],
  
-  modules: [
-  ],
+  modules: ['@nuxtjs/axios' ],
  
  build: {
   extend(config, ctx) {
@@ -42,5 +41,9 @@ export default {
        })
      }
    }
+  },
+
+  axios: {
+    // proxyHeaders: false
   }
 }
