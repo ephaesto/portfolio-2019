@@ -121,7 +121,7 @@ export default {
     width: 100%
     height: 200px
     background-image: url('~assets/img/waveWhite2.svg')
-    background-repeat: repeat-x;
+    background-repeat: repeat-x
     background-size: cover
     background-position: bottom 0 left 5px
   h1
