@@ -3,7 +3,7 @@
     <div class="textFooter">
       <logo class="logo" />
       <p>
-        Créé par Emeric Lebbrecht © 2018 :
+        Créé par Emeric Lebbrecht © {{ new Date().getFullYear() }}:
         <nuxt-link to="/mentions">
           Mentions Légales
         </nuxt-link>
