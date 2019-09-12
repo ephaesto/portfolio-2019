@@ -173,7 +173,6 @@
       transition: transform 0.45s ease-in-out
 
   .cross
-   
     position: absolute
     top: 5px
     left: 5px
