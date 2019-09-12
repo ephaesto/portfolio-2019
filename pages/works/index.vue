@@ -11,7 +11,7 @@
         <div class="textPart">
           <h2>{{ creation.title }}</h2>
           <p>{{ creation.resumer }}</p>
-          <nuxt-link to="">
+          <nuxt-link :to="`/works/${creation.id}`">
             Voir le projet
           </nuxt-link>
         </div>
@@ -131,8 +131,8 @@ export default {
         text-transform: uppercase
         color: #b91ebd
         height: 100%
-        width: 200px;
-        padding: 2rem;
+        width: 200px
+        padding: 2rem
         &:focus
           outline: none
         &:active
@@ -150,7 +150,7 @@ export default {
       width: 0
       height: 0
       border-style: solid;
-      border-width: 100px 10000px 0 0;
+      border-width: 100px 10000px 0 0
       border-color: white transparent transparent transparent
       position: absolute
       left: 50%
@@ -163,7 +163,7 @@ export default {
         width: 0
         height: 0
         border-style: solid
-        border-width: 0 0 100px 10000px;
+        border-width: 0 0 100px 10000px
         border-color: transparent transparent white transparent
         position: absolute
         left: 50%

@@ -127,7 +127,7 @@ export default {
     width: 100%
     height: 200px
     background-image: url('~assets/img/waveWhite1.svg')
-    background-repeat: repeat-x;
+    background-repeat: repeat-x
     background-size: cover
     background-position: bottom
   &:before
@@ -138,9 +138,9 @@ export default {
     width: 100%
     height: 200px
     background-image: url('~assets/img/waveWhite2.svg')
-    background-repeat: repeat-x;
+    background-repeat: repeat-x
     background-size: cover
-    background-position: bottom 0 left 5px;
+    background-position: bottom 0 left 5px
   .row
     display: flex
     flex-direction: row
@@ -237,7 +237,7 @@ export default {
       width: 0
       height: 0
       border-style: solid;
-      border-width: 200px 10000px 0 0;
+      border-width: 200px 10000px 0 0
       border-color: white transparent transparent transparent
       position: absolute
       left: 50%
@@ -250,7 +250,7 @@ export default {
       width: 0
       height: 0
       border-style: solid
-      border-width: 0 0 200px 10000px;
+      border-width: 0 0 200px 10000px
       border-color: transparent transparent white transparent
       position: absolute
       left: 50%
