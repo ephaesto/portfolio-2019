@@ -11,7 +11,7 @@
         <div class="textPart">
           <h2>{{ creation.title }}</h2>
           <p>{{ creation.resumer }}</p>
-          <nuxt-link to="">
+          <nuxt-link :to="`/works/${creation.id}`">
             Voir le projet
           </nuxt-link>
         </div>

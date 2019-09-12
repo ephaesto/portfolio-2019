@@ -4,12 +4,12 @@
       <h1>Mes Compétences</h1>
     </section>
     <div v-if="technos && creations" class="mySkills">
-      <section v-for="(technos,name,indexType) in technoByType(technos)" :key="indexType" :class="name">
+      <section v-for="(technosList,name,indexType) in technoByType(technos)" :key="indexType" :class="name">
         <div class="titreTypeTechno">
           <h2>{{ name }}</h2>
         </div>
         <div class="container containerFlex">
-          <div v-for="(techno,indexTechno) in technos" :key="indexTechno" class="myCard flexCenter">
+          <div v-for="(techno,indexTechno) in technosList" :key="indexTechno" class="myCard flexCenter">
             <div class="myCardImg">
               <img :src="require(`~/assets/img/technos/${techno.img}`)" :alt="techno.imgAlt">
             </div>
@@ -18,7 +18,7 @@
               <p><strong>{{ techno.level }}</strong></p>
               <p> {{ techno.exemple }} </p>
               <div class="ListLink bgwhit">
-                <nuxt-link v-for="(creation,indexCreation) in getLink(techno.creations)" :key="indexCreation" to="">
+                <nuxt-link v-for="(creation,indexCreation) in getLink(techno.creations)" :key="indexCreation" :to="`/works/${creation.id}`">
                   Voir le projet  {{ creation.name }}
                 </nuxt-link>
               </div>
@@ -140,31 +140,31 @@ export default {
       width: 100%
       text-align: center
       &:before
-          content: ""
-          overflow: hidden
-          width: 0
-          height: 0
-          border-style: solid
-          border-width: 200px 10000px 0 0
-          border-color: white transparent transparent transparent
-          position: absolute
-          left: 50%
-          top: 0
-          margin-left: -5000px
-          z-index: 2
+        content: ""
+        overflow: hidden
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 200px 10000px 0 0
+        border-color: white transparent transparent transparent
+        position: absolute
+        left: 50%
+        top: 0
+        margin-left: -5000px
+        z-index: 2
       &:after
-          content: ""
-          overflow: hidden
-          width: 0
-          height: 0
-          border-style: solid
-          border-width: 0 0 200px 10000px
-          border-color: transparent transparent white transparent
-          position: absolute
-          left: 50%
-          bottom: 0
-          margin-left: -5000px
-          z-index: 2
+        content: ""
+        overflow: hidden
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 200px 10000px
+        border-color: transparent transparent white transparent
+        position: absolute
+        left: 50%
+        bottom: 0
+        margin-left: -5000px
+        z-index: 2
       h2
         color: white
         font-size: 2.1rem
