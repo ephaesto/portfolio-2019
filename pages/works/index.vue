@@ -123,22 +123,22 @@ export default {
     p
       font-size: 1.1rem   
     a
-        display: block
-        text-decoration: none
-        font-size: 1.3rem
-        font-weight: 900
-        font-family: 'Montserrat', sans-serif
-        text-transform: uppercase
+      display: block
+      text-decoration: none
+      font-size: 1.3rem
+      font-weight: 900
+      font-family: 'Montserrat', sans-serif
+      text-transform: uppercase
+      color: #b91ebd
+      height: 100%
+      width: 200px
+      padding: 2rem
+      &:focus
+        outline: none
+      &:active
         color: #b91ebd
-        height: 100%
-        width: 200px
-        padding: 2rem
-        &:focus
-          outline: none
-        &:active
-          color: #b91ebd
-        &:hover
-          transform: scale(1.2)
+      &:hover
+        transform: scale(1.2)
 .myWorks
   &:nth-child(odd)
     background-color: #f7f7f7
