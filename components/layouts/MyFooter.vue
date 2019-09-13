@@ -12,7 +12,7 @@
         <a class="reseaux" href="https://github.com/Le-dd">
           <span class="mdi mdi-github-box" />
         </a>
-        <a class="reseaux" href="https://www.linkedin.com/in/emeric-lebbrecht-3351ba111/">
+        <a class="reseaux" href="https://www.linkedin.com/in/emeric-lebbrecht/">
           <span class="mdi mdi-linkedin-box" />
         </a>
       </div>
