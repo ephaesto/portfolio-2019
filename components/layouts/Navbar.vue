@@ -67,7 +67,7 @@
         return this.widthWindows <=750 && this.scroll > 64
       },
       isButtonVisible(){
-        return this.widthWindows <=750 && this.scroll > 67
+        return this.widthWindows <=750 && this.scroll > 80
       }
     }
   }

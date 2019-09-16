@@ -255,13 +255,7 @@ export default {
         webmaster: "LEBBRECHT Emeric",
         hosting: "OVH – 2 rue Kellermann - 59100 Roubaix - France"
       }
-    },
-    async asyncData({ $axios }) {
-      const creations = await $axios.$get('http://localhost:8000/api/creations')
-      return {
-          creations: creations["hydra:member"]
-        }
-    },
+    }, 
     mounted() {
       this.widthWindows = window.innerWidth
       window.addEventListener('resize', ()=>{ this.widthWindows = window.innerWidth} )
