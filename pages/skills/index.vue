@@ -172,10 +172,10 @@ export default {
   .container
     flex-wrap: wrap
     max-width: none
-    width: 700px
+    width: 280px
   .myCard
     background-color: #f7f7f7
-    width: 40%
+    width: 100%
     text-align: center
     display: flex
     flex-direction: column
@@ -233,18 +233,18 @@ export default {
     &:before
       background-position: bottom 0 left 100px
   /*-------------- Title end----------------*/
-  /*-------------- My Skills ----------------*/
-  .mySkills
-    .container
-      width: 900px
-    .myCard
-      padding: 5rem
-  /*-------------- My Skills end ----------------*/
 @media screen and (min-width: 436px)
   .title
     height: 500px
     h1
       font-size: 3.5rem
+@media screen and (min-width: 460px)
+  /*-------------- My Skills ----------------*/
+  .mySkills
+    .container
+      padding: 5rem
+      width: 440px
+  /*-------------- My Skills end ----------------*/
 
 @media screen and (min-width: 575px)
   .title
@@ -267,11 +267,18 @@ export default {
   /*-------------- My Skills ----------------*/
   .mySkills
     .container
-      width: 800px
+      width: 730px
     .myCard
+      width: 40%
       margin: 0 2rem 2rem 0
   /*-------------- My Skills end ----------------*/
-@media screen and (min-width: 860px)
+@media screen and (min-width: 825px)
+  /*-------------- My Skills ----------------*/
+  .mySkills
+    .container
+      width: 800px
+  /*-------------- My Skills end ----------------*/
+@media screen and (min-width: 925px)
   /*-------------- My Skills ----------------*/
   .mySkills
     .container

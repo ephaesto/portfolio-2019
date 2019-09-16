@@ -101,7 +101,7 @@ export default {
 /*-------------- Title end ----------------*/
 /*-------------- My Works ----------------*/
 .myWorks
-  padding: 2rem 2rem 
+  padding: 2rem 2rem
   .imgPart
     display: flex
     justify-content: center
@@ -140,6 +140,7 @@ export default {
       &:hover
         transform: scale(1.2)
 .myWorks
+  overflow: hidden 
   &:nth-child(odd)
     background-color: #f7f7f7
     position: relative
