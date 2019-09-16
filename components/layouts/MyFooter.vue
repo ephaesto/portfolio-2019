@@ -21,7 +21,7 @@
 </template>
 
 <script>
-  import Logo from '~/components/svg/logo'
+  import Logo from '~/components/svg/Logo'
   export default {
     name: 'MyFooter',
     components: {
